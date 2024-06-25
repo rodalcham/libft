@@ -6,5 +6,6 @@ ft_printf/OBJ
 get_next_line/*.a
 get_next_line/OBJ
 get_next_line/B_OBJ
-Libft/*.h
+Libft/*.a
 Libft/OBJ
+.DS_Store
