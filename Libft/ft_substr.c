@@ -1,0 +1,47 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rchavez <rchavez@student.42heilbronn.de    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/03/10 20:03:22 by rchavez@stu       #+#    #+#             */
+/*   Updated: 2024/03/13 13:07:04 by rchavez          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "libft.h"
+
+static void	ft_voidcpy(char *dst, const char *src, size_t dstsize)
+{
+	size_t	i;
+
+	i = 0;
+	while (i < dstsize - 1 && src[i])
+	{
+		dst[i] = src[i];
+		i++;
+	}
+	dst[i] = '\0';
+}
+
+char	*ft_substr(char const *s, unsigned int start, size_t len)
+{
+	char	*s1;
+
+	if (start < ft_strlen(s))
+	{
+		if (ft_strlen(&s[start]) < len)
+			len = ft_strlen(&s[start]);
+	}
+	else
+	{
+		len = 0;
+		start = 0;
+	}
+	s1 = (char *)malloc((len + 1) * sizeof(char));
+	if (!s1)
+		return (NULL);
+	ft_voidcpy(s1, &s[start], len + 1);
+	return (s1);
+}

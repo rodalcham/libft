@@ -1,0 +1,60 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rchavez@student.42heilbronn.de <rchavez    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/03/07 16:21:31 by rchavez           #+#    #+#             */
+/*   Updated: 2024/03/10 17:34:45 by rchavez@stu      ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "libft.h"
+
+void	*ft_calloc(size_t count, size_t size)
+{
+	void	*res;
+
+	res = (void *)malloc(count * size);
+	if (!res)
+		return (NULL);
+	ft_memset(res, 0, count * size);
+	return (res);
+}
+
+// #include <stdio.h>
+// #include <string.h>
+// int main() {
+//     // Test parameters
+//     size_t count = 5;
+//     size_t size = 10;
+
+//     // Allocate memory using your custom calloc
+//     void *my_memory = ft_calloc(count, size);
+//     if (!my_memory) {
+//         fprintf(stderr, "Error: Custom calloc failed\n");
+//         return (1);
+//     }
+
+//     // Allocate memory using standard calloc
+//     void *std_memory = calloc(count, size);
+//     if (!std_memory) {
+//         fprintf(stderr, "Error: Standard calloc failed\n");
+//         free(my_memory);  // Release memory allocated by custom calloc
+//         return (1);
+//     }
+
+//     // Check if the memory blocks are equal
+//     if (memcmp(my_memory, std_memory, count * size) == 0) {
+//         printf("Memory blocks are equal.\n");
+//     } else {
+//         printf("Memory blocks differ.\n");
+//     }
+
+//     // Free allocated memory
+//     free(my_memory);
+//     free(std_memory);
+
+//     return (0);
+// }
