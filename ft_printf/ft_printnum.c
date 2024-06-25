@@ -6,7 +6,7 @@
 /*   By: rchavez <rchavez@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/18 12:02:52 by rchavez@stu       #+#    #+#             */
-/*   Updated: 2024/06/25 11:41:20 by rchavez          ###   ########.fr       */
+/*   Updated: 2024/06/25 13:41:55 by rchavez          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	ft_printnum(unsigned long num, int base)
 
 	if (base == 10)
 	{
-		str = ft_itoa((int)num);
+		str = ftp_itoa((int)num);
 	}
 	else
 	{

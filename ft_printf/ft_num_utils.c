@@ -6,7 +6,7 @@
 /*   By: rchavez <rchavez@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/19 09:48:42 by rchavez           #+#    #+#             */
-/*   Updated: 2024/06/25 11:41:41 by rchavez          ###   ########.fr       */
+/*   Updated: 2024/06/25 13:41:43 by rchavez          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,7 @@ void	ft_numrev(char *str)
 	}
 }
 
-char	*ft_itoa(int n)
+char	*ftp_itoa(int n)
 {
 	int			l;
 	int			i;
