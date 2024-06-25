@@ -6,11 +6,11 @@
 /*   By: rchavez <rchavez@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/07 12:38:02 by rchavez           #+#    #+#             */
-/*   Updated: 2024/03/08 11:05:10 by rchavez          ###   ########.fr       */
+/*   Updated: 2024/06/25 14:57:30 by rchavez          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ftlibft.h"
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
