@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_back.c                                   :+:      :+:    :+:   */
+/*   ft_lstadd_back_bonus.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rchavez <rchavez@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/13 16:56:18 by rchavez           #+#    #+#             */
-/*   Updated: 2024/03/13 17:21:46 by rchavez          ###   ########.fr       */
+/*   Updated: 2024/06/25 14:53:31 by rchavez          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ftlibft.h"
 
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {

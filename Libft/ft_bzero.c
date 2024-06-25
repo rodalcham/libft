@@ -6,11 +6,11 @@
 /*   By: rchavez <rchavez@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/06 12:35:03 by rchavez           #+#    #+#             */
-/*   Updated: 2024/03/08 11:04:47 by rchavez          ###   ########.fr       */
+/*   Updated: 2024/06/25 14:53:13 by rchavez          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ftlibft.h"
 
 void	ft_bzero(void *s, size_t n)
 {

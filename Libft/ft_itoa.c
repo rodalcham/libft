@@ -6,11 +6,11 @@
 /*   By: rchavez <rchavez@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/12 08:44:19 by rchavez@stu       #+#    #+#             */
-/*   Updated: 2024/03/13 13:08:49 by rchavez          ###   ########.fr       */
+/*   Updated: 2024/06/25 14:53:27 by rchavez          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ftlibft.h"
 
 static int	ft_numlen(int n)
 {

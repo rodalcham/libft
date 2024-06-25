@@ -6,11 +6,11 @@
 /*   By: rchavez <rchavez@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/12 12:11:09 by rchavez           #+#    #+#             */
-/*   Updated: 2024/03/12 12:31:10 by rchavez          ###   ########.fr       */
+/*   Updated: 2024/06/25 14:55:01 by rchavez          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ftlibft.h"
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {

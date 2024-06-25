@@ -6,11 +6,11 @@
 /*   By: rchavez <rchavez@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/12 12:36:45 by rchavez           #+#    #+#             */
-/*   Updated: 2024/03/12 12:43:41 by rchavez          ###   ########.fr       */
+/*   Updated: 2024/06/25 14:54:19 by rchavez          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ftlibft.h"
 
 void	ft_putchar_fd(char c, int fd)
 {

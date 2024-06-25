@@ -6,7 +6,7 @@
 #    By: rchavez <rchavez@student.42heilbronn.de    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/04 17:03:32 by rchavez           #+#    #+#              #
-#    Updated: 2024/06/25 11:24:40 by rchavez          ###   ########.fr        #
+#    Updated: 2024/06/25 14:52:52 by rchavez          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -36,7 +36,7 @@ NAME = ftlibft.a
 
 BNAME = ftlibft_bonus.a
 
-LIB = libft.h
+LIB = ftlibft.h
 
 CFLAGS = -Wall -Werror -Wextra -c -include $(LIB)
 

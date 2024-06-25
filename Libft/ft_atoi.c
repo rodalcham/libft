@@ -6,11 +6,11 @@
 /*   By: rchavez <rchavez@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/07 15:45:46 by rchavez           #+#    #+#             */
-/*   Updated: 2024/03/13 12:57:21 by rchavez          ###   ########.fr       */
+/*   Updated: 2024/06/25 14:53:11 by rchavez          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ftlibft.h"
 
 static int	ft_isspace(int c)
 {

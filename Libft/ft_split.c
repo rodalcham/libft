@@ -6,11 +6,11 @@
 /*   By: rchavez <rchavez@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/11 15:23:53 by rchavez           #+#    #+#             */
-/*   Updated: 2024/04/22 15:06:49 by rchavez          ###   ########.fr       */
+/*   Updated: 2024/06/25 14:54:32 by rchavez          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ftlibft.h"
 
 static void	ft_voidcpy(char *dst, const char *src, size_t dstsize)
 {

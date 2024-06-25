@@ -6,11 +6,11 @@
 /*   By: rchavez <rchavez@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/06 15:32:00 by rchavez           #+#    #+#             */
-/*   Updated: 2024/03/13 13:06:19 by rchavez          ###   ########.fr       */
+/*   Updated: 2024/06/25 14:54:51 by rchavez          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ftlibft.h"
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {

@@ -6,11 +6,11 @@
 /*   By: rchavez <rchavez@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/06 11:51:01 by rchavez           #+#    #+#             */
-/*   Updated: 2024/03/08 11:05:20 by rchavez          ###   ########.fr       */
+/*   Updated: 2024/06/25 14:54:16 by rchavez          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ftlibft.h"
 
 void	*ft_memset(void *b, int c, size_t len)
 {

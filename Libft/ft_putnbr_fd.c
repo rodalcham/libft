@@ -6,11 +6,11 @@
 /*   By: rchavez <rchavez@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/12 13:04:38 by rchavez           #+#    #+#             */
-/*   Updated: 2024/03/13 13:10:25 by rchavez          ###   ########.fr       */
+/*   Updated: 2024/06/25 14:54:25 by rchavez          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ftlibft.h"
 
 static int	ft_pow(int n, int p)
 {

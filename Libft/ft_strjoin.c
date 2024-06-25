@@ -6,11 +6,11 @@
 /*   By: rchavez <rchavez@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/10 23:17:17 by rchavez@stu       #+#    #+#             */
-/*   Updated: 2024/03/11 11:13:33 by rchavez          ###   ########.fr       */
+/*   Updated: 2024/06/25 14:54:45 by rchavez          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ftlibft.h"
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
