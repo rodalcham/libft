@@ -6,7 +6,7 @@
 #    By: rchavez <rchavez@student.42heilbronn.de    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/06/25 10:48:20 by rchavez           #+#    #+#              #
-#    Updated: 2024/06/25 13:47:06 by rchavez          ###   ########.fr        #
+#    Updated: 2024/06/25 17:44:59 by rchavez          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -42,6 +42,10 @@ BGNL = \
 	get_next_line/get_next_line_bonus.c\
 	get_next_line/get_next_line_utils_bonus.c
 
+MCT = \
+	ft_malloc/ft_malloc_bad.c ft_malloc/ft_malloc.c\
+	ft_malloc/globals.c ft_malloc/list.c
+
 OBJ = OBJ/
 
 OL = $(OBJ)/Libft
@@ -50,9 +54,13 @@ OG = $(OBJ)/get_next_line
 
 OP = $(OBJ)/ft_printf
 
-OFILES = $(LIBFT:%.c=$(OBJ)%.o) $(GNL:%.c=$(OBJ)%.o) $(PRINTF:%.c=$(OBJ)%.o)
+OM = $(OBJ)/ft_malloc
 
-BOFILES = $(LIBFT:%.c=$(OBJ)%.o) $(BLIBFT:%.c=$(OBJ)%.o) $(BGNL:%.c=$(OBJ)%.o) $(PRINTF:%.c=$(OBJ)%.o)
+OFILES = $(LIBFT:%.c=$(OBJ)%.o) $(GNL:%.c=$(OBJ)%.o)\
+	$(PRINTF:%.c=$(OBJ)%.o) $(MCT:%.c=$(OBJ)%.o)
+
+BOFILES = $(LIBFT:%.c=$(OBJ)%.o) $(BLIBFT:%.c=$(OBJ)%.o)\
+	$(BGNL:%.c=$(OBJ)%.o) $(PRINTF:%.c=$(OBJ)%.o) $(MCT:%.c=$(OBJ)%.o)
 
 NAME = libft.a
 
@@ -60,7 +68,7 @@ CC = cc
 
 CFLAGS = -Wall -Wextra -Werror
 
-all: $(OL) $(OG) $(OP) $(OFILES)
+all: $(OL) $(OG) $(OP) $(OM) $(OFILES)
 	rm -f $(NAME)
 	ar rcs $(NAME) $(OFILES)
 
@@ -87,13 +95,18 @@ $(OG) : $(OBJ)
 		mkdir $(OG);\
 	fi
 
+$(OM) : $(OBJ)
+	@if [ ! -d $(OM) ]; then\
+		mkdir $(OM);\
+	fi
+
 libft: $(BLIBFT)
 
 gnl: $(BGNL)
 
 printf: $(PRINTF)
 
-bonus: $(OL) $(OG) $(OP) $(BOFILES)
+bonus: $(OL) $(OG) $(OP) $(OM) $(BOFILES)
 	rm -f $(NAME)
 	ar rcs $(NAME) $(BOFILES)
 
@@ -101,12 +114,14 @@ clean:
 	cd Libft && make clean
 	cd get_next_line && make clean
 	cd ft_printf && make clean
+	cd ft_malloc && make clean
 	rm -fr $(OBJ)
 
 fclean: clean
 	cd Libft && make fclean
 	cd get_next_line && make fclean
 	cd ft_printf && make fclean
+	cd ft_malloc && make fclean
 	rm -f $(NAME)
 
 re: fclean all
